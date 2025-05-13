@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vocab Booster</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Are you ready to unlock new vocabs?</p>
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1 class="title">Vocab Booster</h1>
+        <h2 class="subtitle">With great vocab comes great English speaking skill</h2>
+    </div>
+
+    <!-- Centered Start Button -->
+    <div id="start-container" class="start-center">
+        <button id="start-stop-btn">Start</button>
+    </div>
+
+    <!-- Word Section -->
+    <div id="word-section" class="word-section hidden">
+        <div class="word-display glass">
+            <h3 id="word"></h3>
+            <p id="meaning"></p>
+            <p id="example"></p>
+        </div>
+        <div class="action-buttons">
+            <button id="next-btn">Next Word</button>
+            <button id="google-btn">Google It</button>
+            <a id="google-link" href="#" target="_blank" class="hidden"></a>
+            <button id="stop-btn">Stop</button>
+        </div>
+    </div>
+    <!-- Js -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
